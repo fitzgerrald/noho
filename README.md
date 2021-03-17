@@ -1,7 +1,6 @@
-include <iostream>
+#include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 using namespace std;
 int p,m,g,c;
 char u;
@@ -42,8 +41,8 @@ void aplikasiKalkulator(){
  cout<<"Masukan angka kedua : "; cin>>angka_2;
  hasil = angka_1 + angka_2;
  cout<<"Hasilnya adalah "<<hasil<<endl<<endl;
-
-cout<<"Apakah ingin menggunakan kembali (y/n) : "; cin>>u;
+ 
+ cout<<"Apakah ingin menggunakan kembali (y/n) : "; cin>>u;
  if(u == 'y' || u == 'Y'){
  //teruskan looping
  continue;
@@ -95,8 +94,8 @@ cout<<"Apakah ingin menggunakan kembali (y/n) : "; cin>>u;
  hasil = angka_1 / angka_2;
  cout<<"Hasilnya adalah "<<hasil<<endl<<endl;
  cout<<"Apakah ingin menggunakan kembali (y/n) : "; cin>>u;
-
-if(u == 'y' || u == 'Y'){
+ 
+ if(u == 'y' || u == 'Y'){
  //teruskan looping
  continue;
  }
@@ -143,8 +142,7 @@ void gameGBK(){
  {
  cout<<"Anda Menang"<<endl;
  }
-
-else if((g == 1 && c == 1) || (g == 2 && c == 2) || (g == 0 && c == 0))
+ else if((g == 1 && c == 1) || (g == 2 && c == 2) || (g == 0 && c == 0))
  {
  cout<<"Draw"<<endl;
  }
